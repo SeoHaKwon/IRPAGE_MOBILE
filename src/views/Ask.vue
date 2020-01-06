@@ -1,14 +1,14 @@
 <template>
-  <AskPage></AskPage>
+  <AskPage2></AskPage2>
 </template>
 
 <script>
 // @ is an alias to /src
-import AskPage from '@/components/AskPage.vue'
+import AskPage2 from '@/components/AskPage2.vue'
 export default {
   name: 'Ask',
   components: {
-    AskPage
+    AskPage2
   }
 }
 </script>
