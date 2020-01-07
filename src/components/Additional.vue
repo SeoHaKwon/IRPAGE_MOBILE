@@ -146,3 +146,4 @@
 export default {
   name: 'AskPage'
 }
+</script>

@@ -10,44 +10,44 @@
         <p class="check-box">
           <input type="checkbox">
           <span>전체동의</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
       </div>
         <p class="check-box">
           <input type="checkbox">
           <span>(필수) 이용약관</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
         <p class="check-box">
           <input type="checkbox">
           <span>(필수) 개인정보 수집 및 이용 안내</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
                 <p class="check-box">
           <input type="checkbox">
           <span>(필수) 제 3자 제공동의</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
         <p class="check-box">
           <input type="checkbox">
           <span>(선택) 제 3자 제공, 처리위탁 동의</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
                 <p class="check-box">
           <input type="checkbox">
           <span>(선택) 마케팅 활용 동의</span>
-          <button class="btn-view">보기</button>
+          <button class="btn-view" v-on:click="popOpen">보기</button>
         </p>
     </div>
     </div>
     <a href="#" class="btn-bottom active">
       동의하기
     </a>
-    <div class="pop"> <!--active 클래스 추가시 활성화됩니다.-->
+    <div class="pop" v-bind:class="{ active: IsPop }"> <!--active 클래스 추가시 활성화됩니다.-->
       <div class="pop-cont">
         <div class="pop-header">
           <strong>서비스 이용약관</strong>
-          <button type="button" class="pop-close"></button>
+          <button type="button" class="pop-close" v-on:click="popClose"></button>
         </div>
         <div class="pop-inner">
           <h2 class="title">서비스 이용약관</h2>
@@ -71,7 +71,27 @@
     </div>
   </div>
 </template>
- <style lang="scss" scoped>
+<script>
+export default {
+  name: 'FirstPage',
+  data: () => {
+    return {
+      IsPop: true
+    }
+  },
+  methods: {
+    popClose () {
+      const _self = this
+      _self.IsPop = false
+    },
+    popOpen () {
+      const _self = this
+      _self.IsPop = true
+    }
+  }
+}
+</script>
+<style lang="scss" scoped>
  .wrap {
    height:100%;
    padding-bottom:100px;
@@ -264,7 +284,3 @@
     }
   }
  </style>
-<script>
-export default {
-  name: 'FirstPage'
-}

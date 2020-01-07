@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import FirstStep from '../views/FirstStep.vue'
-import AgreeStep from '../views/AgreeStep.vue'
-import Ask from '../views/Ask.vue'
-import AdditionalInfor from '../views/AdditionalInfor.vue'
+import Home from '@/views/Home'
+import FirstStep from '@/views/FirstStep'
+import AgreeStep from '@/views/AgreeStep'
+import Ask from '@/views/Ask'
+import Ask2 from '@/views/Ask2'
+import AdditionalInfor from '@/views/AdditionalInfor'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/ask',
     name: 'ask',
     component: Ask
+  },
+  {
+    path: '/ask2',
+    name: 'ask2',
+    component: Ask2
   },
   {
     path: '/additionalInfor',
