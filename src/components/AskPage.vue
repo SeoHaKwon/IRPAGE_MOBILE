@@ -32,10 +32,15 @@
 </template>
  <style lang="scss" scoped>
  .wrap {
+   display:flex;
+   flex-direction: column;
    height:100%;
-   padding-bottom:100px;
    .content {
      padding:0 34px;
+     margin-bottom:auto;
+     & +.btn-bottom {
+       margin-top:20px;
+     }
    }
  }
  .header {
@@ -64,10 +69,10 @@
    }
   .btn-bottom {
     display:block;
-    position: fixed;
     left:0;
     bottom:0;
     width:100%;
+    margin-top:auto;
     padding:13px 0 53px 0;
     background-color:#E91E63;
     font-weight: 500;
