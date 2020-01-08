@@ -46,8 +46,8 @@ export default {
     focusEvent () {
       this.isFocus = false
       // document.documentElement.scrollTop = 0
-      // document.querySelector('.wrap').scrollIntoView()
-      document.querySelector('.wrap').scrollTop = 0
+      document.querySelector('.wrap').scrollIntoView()
+      console.log(document.querySelector('.wrap').scrollTop)
     },
     blurEvent () {
       this.isFocus = true
