@@ -44,10 +44,11 @@ export default {
   },
   methods: {
     focusEvent () {
+      const top = document.querySelector('body')
       this.isFocus = false
       // document.documentElement.scrollTop = 0
-      document.querySelector('.wrap').scrollIntoView()
-      console.log(document.querySelector('.wrap').scrollTop)
+      // document.querySelector('.wrap').scrollIntoView()
+      top.scroll('top', 0)
     },
     blurEvent () {
       this.isFocus = true
