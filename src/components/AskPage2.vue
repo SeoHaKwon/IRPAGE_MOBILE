@@ -28,6 +28,7 @@ export default {
 <style lang="scss" scoped>
  .wrap {
    height:100%;
+   min-height:568px;
    padding-bottom:100px;
    .content {
      padding:0 34px;
