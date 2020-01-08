@@ -20,7 +20,12 @@
     </div>
   </div>
 </template>
- <style lang="scss" scoped>
+<script>
+export default {
+  name: 'AskPage'
+}
+</script>
+<style lang="scss" scoped>
  .wrap {
    height:100%;
    padding-bottom:100px;
@@ -145,7 +150,3 @@
     }
   }
  </style>
-<script>
-export default {
-  name: 'AskPage'
-}

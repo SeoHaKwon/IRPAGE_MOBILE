@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home'
 import FirstStep from '@/views/FirstStep'
 import AgreeStep from '@/views/AgreeStep'
-import Ask from '@/views/Ask'
-import Ask2 from '@/views/Ask2'
+import Ask from '@/views/Ask2'
+import Ask2 from '@/views/Ask'
 import AdditionalInfor from '@/views/AdditionalInfor'
 
 Vue.use(VueRouter)

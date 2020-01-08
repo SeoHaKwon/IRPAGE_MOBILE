@@ -1,23 +1,24 @@
 <template>
   <div class="wrap">
+    <div style="flex: 1;">
     <div class="header">
       <a href="#" class="btn-link"></a>
       <strong>문의하기</strong>
     </div>
     <div class="content">
-      <strong class="tit">
+      <strong class="tit" v-if="isFocus">
         LG디스플레이에<br>
         궁금하신 내용을 문의 주시면<br>
         IR담당자가 직접 답변 드립니다.
       </strong>
-      <p class="sub">
+      <p class="sub" v-if="isFocus">
         등록된 이메일과 푸시알림으로 답변이 전달됩니다.
       </p>
      <div class="textarea-wrap">
        <strong class="tit">문의 내용</strong>
        <div class="textarea">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <p class="txt">
+        <textarea name="" id="" cols="30" rows="10" v-on:focus="focusEvent" v-on:blur="blurEvent"></textarea>
+        <p class="txt" v-if="isFocus">
           <strong>질문 내용을 입력해주세요.</strong>
           (작성글은 300자 내로 제한됩니다.) <br>
           반말, 욕설, 비방, 홍보, 광고 등 부적절한 내용의 문의 내용에 대해서는 답변을 드릴 수 없으며 추후 이용에 제한을 둘 수 있습니다.
@@ -25,18 +26,44 @@
        </div>
      </div>
     </div>
+    </div>
+    <div v-if="isFocus">
     <a href="#" class="btn-bottom active">
       IR담당자에게 전송
     </a>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'AskPage',
+  data: () => {
+    return {
+      isFocus: true
+    }
+  },
+  methods: {
+    focusEvent () {
+      this.isFocus = false
+      // document.documentElement.scrollTop = 0
+      // document.querySelector('.wrap').scrollIntoView()
+      document.querySelector('.wrap').scrollTop = 0
+    },
+    blurEvent () {
+      this.isFocus = true
+    }
+  }
+}
+</script>
  <style lang="scss" scoped>
  .wrap {
-   height:100%;
-   padding-bottom:100px;
-   .content {
-     padding:0 34px;
-   }
+  height:100%;
+  // padding-bottom:100px;
+  display: flex;
+  flex-direction: column;
+  .content {
+    padding:0 34px;
+  }
  }
  .header {
    position: relative;;
@@ -64,7 +91,8 @@
    }
   .btn-bottom {
     display:block;
-    position: fixed;
+    // position: fixed;
+    // height: 92px;
     left:0;
     bottom:0;
     width:100%;
@@ -159,7 +187,3 @@
     }
   }
  </style>
-<script>
-export default {
-  name: 'AskPage'
-}
