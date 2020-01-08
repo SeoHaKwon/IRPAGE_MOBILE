@@ -35,6 +35,7 @@
    display:flex;
    flex-direction: column;
    height:100%;
+   min-height:568px;
    .content {
      padding:0 34px;
      margin-bottom:auto;
