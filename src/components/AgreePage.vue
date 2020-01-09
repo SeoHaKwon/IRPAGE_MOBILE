@@ -375,7 +375,6 @@ export default {
     .pop-cont {
       height:100%;
       padding:0 16px;
-      overflow: auto;
       background: #FFFFFF;
       box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.25);
       border-radius: 6px 6px 0px 0px;
@@ -405,6 +404,8 @@ export default {
       }
     }
     .pop-inner {
+      overflow: auto;
+      height: 100%;
       .title {
         font-weight: bold;
         margin-bottom:22px;
