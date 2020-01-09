@@ -586,8 +586,8 @@ export default {
       }
     }
     .pop-inner {
-      overflow: auto;
       height: 100%;
+      overflow: auto;
       .title {
         font-weight: bold;
         margin-bottom:22px;
