@@ -107,6 +107,9 @@ button {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
 }
+input::placeholder {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 .en {
     font-family: 'Roboto', sans-serif;
 }

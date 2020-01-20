@@ -26,10 +26,10 @@
           </div>
         </div>
       </div>
+    </div>
     <a href="#" class="btn-bottom active">
       시작하기
     </a>
-  </div>
 </div>
 </template>
  <style lang="scss" scoped>
