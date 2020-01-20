@@ -31,7 +31,7 @@
   padding-bottom: 100px;
   overflow: auto;
   .content {
-    padding: 0 34px;
+    padding: 0 22px;
   }
 }
 .btn-bottom {

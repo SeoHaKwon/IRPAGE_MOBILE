@@ -80,7 +80,7 @@ export default {
    flex-direction: column;
    height:100%;
    .content {
-     padding:0 34px;
+     padding:0 22px;
    }
  }
  .header {
