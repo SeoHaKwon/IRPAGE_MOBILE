@@ -17,7 +17,7 @@
               문의 주신 질문에 IR담당자가 답변을 남겼습니다.
             </p>
           </li>
-          <li class="meting">
+          <li class="meeting">
             <div class="info">
               <span class="type">문의답변</span>
               <span class="ago">1시간 전</span>
@@ -49,7 +49,7 @@
               문의 주신 질문에 IR담당자가 답변을 남겼습니다.
             </p>
           </li>
-          <li class="meting">
+          <li class="meeting">
             <div class="info">
               <span class="type">문의답변</span>
               <span class="ago">1시간 전</span>
@@ -123,13 +123,12 @@ export default {
      padding:0 0 23px 63px;
      margin-bottom:18px;
      border-bottom:1px solid #E5E5EA;
-     @each $obj in ask , meting , ir {
+     @each $obj in ask , meeting , ir {
        &.#{$obj}{
          background:url(../assets/bg/bg_alarm_#{$obj}.png) no-repeat left top;
        }
      }
      &:last-child {
-       padding-bottom:0;
        margin-bottom:0;
        border:none;
      }

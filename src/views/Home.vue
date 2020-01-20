@@ -1,15 +1,15 @@
 <template>
-    <metingList/>
+    <MeetingList/>
 </template>
 
 <script>
 // @ is an alias to /src
-import metingList from '@/components/metingList.vue'
+import MeetingList from '@/components/MeetingList.vue'
 
 export default {
   name: 'home',
   components: {
-    metingList
+    MeetingList
   }
 }
 </script>

@@ -107,7 +107,9 @@ button {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 400;
 }
-
+.en {
+    font-family: 'Roboto', sans-serif;
+}
 article,
 aside,
 details,
