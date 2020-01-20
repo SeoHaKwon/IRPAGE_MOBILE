@@ -20,12 +20,12 @@
           </div>
         </div>
       </div>
-      <div class="toggle-section">
+      <div class="toggle-section" :class="{active : active_el}">
         <p class="toggl-tit">
           신청내용
-          <button type="button"></button>
+          <button type="button" @click="onToggle()"></button>
         </p>
-        <div class="toggle-cont">
+        <div class="toggle-cont" >
           <dl class="base">
             <dt class="tit">동행인</dt>
             <dd>
@@ -42,10 +42,10 @@
           </dl>
         </div>
       </div>
-      <div class="toggle-section">
+      <div class="toggle-section" :class="{active : active_el}">
         <p class="toggl-tit">
           담당자 정보
-          <button type="button"></button>
+          <button type="button" @click="onToggle()"></button>
         </p>
         <div class="toggle-cont">
           <div class="manager-info">
@@ -78,10 +78,10 @@
           </div>
         </div>
       </div>
-            <div class="toggle-section">
+      <div class="toggle-section" :class="{active : active_el}">
         <p class="toggl-tit">
           오시는길
-          <button type="button"></button>
+          <button type="button" @click="onToggle(3)"></button>
         </p>
         <div class="toggle-cont">
           <div class="address-info">
@@ -249,9 +249,11 @@ export default {
       transform: translateY(-50%);
       background:url(../assets/arrow/arrow_toggle_down.svg) no-repeat center;
       background-size:cover;
+      transition: all .5s;
     }
   }
   .toggle-cont {
+    display:none;
     padding:16px 0 30px 0;
     .base {
       dt {
@@ -391,7 +393,7 @@ export default {
     position:relative;
     padding-top:26px;
     &::after {
-      display:block;
+      display:none;
       position:absolute;
       left:-22px;
       top:0;
@@ -401,5 +403,38 @@ export default {
       content:"";
     }
   }
+  &.active {
+    & + .toggle-section {
+      &::after{
+        display:block;
+      }
+    }
+    .toggl-tit {
+        button {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    .toggle-cont {
+      display:block;
+    }
+  }
 }
  </style>
+ <script>
+ export default {
+  name: 'AskPage',
+  data: () => {
+    return {
+      active_el : false
+    }
+  },
+  methods: {
+    onToggle: function() {
+      console.log(this);
+      const btn = document.querySelector('.toggl-tit');
+      const toggle = btn.parentNode;
+      toggle.classList.toggle('active');
+    }
+  }
+}
+ </script>

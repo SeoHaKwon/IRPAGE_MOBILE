@@ -1,15 +1,15 @@
 <template>
-    <MeetingApply/>
+    <EmailEdit/>
 </template>
 
 <script>
 // @ is an alias to /src
-import MeetingApply from '@/components/MeetingApply.vue'
+import EmailEdit from '@/components/EmailEdit.vue'
 
 export default {
   name: 'home',
   components: {
-    MeetingApply
+    EmailEdit
   }
 }
 </script>
