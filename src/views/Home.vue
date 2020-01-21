@@ -1,15 +1,15 @@
 <template>
-    <MainMenu/>
+    <InputInformation/>
 </template>
 
 <script>
 // @ is an alias to /src
-import MainMenu from '@/components/MainMenu.vue'
+import InputInformation from '@/components/InputInformation.vue'
 
 export default {
   name: 'home',
   components: {
-    MainMenu
+    InputInformation
   }
 }
 </script>

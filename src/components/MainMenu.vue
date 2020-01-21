@@ -88,7 +88,6 @@ export default {
   },
   methods: {
     onToggle () {
-      console.log(1111)
       this.isActive = !this.isActive
     }
   }
