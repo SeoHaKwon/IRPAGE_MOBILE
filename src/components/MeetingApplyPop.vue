@@ -47,6 +47,17 @@
     <a href="#" class="btn-bottom active">
       신청하기
     </a>
+    <div class="pop active">
+      <div class="pop-cont">
+        <strong>IR미팅 신청이 완료되었습니다.</strong>
+        <p>
+          IR담당자 승인 후 이메일, 앱 알림으로<br>
+          알려드리겠습니다.<br>
+          평균적으로 1일 내 가능 여부 확인 드립니다.
+        </p>
+        <button type="butotn">확인</button>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -257,6 +268,66 @@ export default {
         letter-spacing: -0.5px;
         color: #8E8E93;
       }
+    }
+  }
+}
+.pop {
+  display:none;
+  align-items: center;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  padding:0 28px;
+  background-color:rgba($color: #000000, $alpha: .6);
+  &.active {
+    display:flex;
+  }
+  .pop-cont {
+    position:relative;
+    width:100%;
+    padding:30px 30px 50px 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+    strong {
+      display:inline-block;
+      padding-top:60px;
+      background:url(../assets/bg/bg_check_pop.svg) no-repeat center top;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #313439;
+    }
+    p {
+      margin:13px 0 42px 0;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+      color: #8E8E93;
+    }
+    button {
+      position:absolute;
+      left:0;
+      bottom:0;
+      width:100%;
+      padding:10px 0 14px 0;
+      background: #E91E63;
+      border-radius: 0px 0px 10px 10px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: -0.005em;
+      color: #FFFFFF;
+      text-align: center;
     }
   }
 }

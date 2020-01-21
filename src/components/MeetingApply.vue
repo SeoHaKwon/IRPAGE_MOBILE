@@ -330,5 +330,5 @@ export default {
     + .desc {
       margin-top:16px;
     }
-}
+ }
  </style>
