@@ -1,15 +1,15 @@
 <template>
-    <MeetingApplyPop/>
+    <Mypage/>
 </template>
 
 <script>
 // @ is an alias to /src
-import MeetingApplyPop from '@/components/MeetingApplyPop.vue'
+import Mypage from '@/components/Mypage.vue'
 
 export default {
   name: 'home',
   components: {
-    MeetingApplyPop
+    Mypage
   }
 }
 </script>
