@@ -66,8 +66,34 @@
         </li>
       </ul>
     </div>
+    <div class="fix-menu" v-bind:class="{ active: isActive }"> <!--클래스 active 로 컨트롤하시면됩니다.-->
+      <ul class="list">
+        <li class="phone">전화하기<a href="#"></a></li>
+        <li class="ask">문의하기<a href="#"></a></li>
+        <li class="apply">IR 미팅 신청하기<a href="#"></a></li>
+      </ul>
+      <button class="toggle-menu" v-on:click="onToggle">
+        <span></span>
+      </button>
+    </div>
   </div>
 </template>
+<script>
+export default {
+  name: 'MainMenu',
+  data: () => {
+    return {
+      isActive: false
+    }
+  },
+  methods: {
+    onToggle () {
+      console.log(1111)
+      this.isActive = !this.isActive
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
  .wrap {
    height:100%;
@@ -226,6 +252,81 @@
       font-size: 14px;
       line-height: 16px;
       color: #8E8E93;
+    }
+  }
+  .fix-menu {
+    position:fixed;
+    bottom:30px;
+    right:20px;
+    text-align: right;
+    .list {
+      display:none;
+      position:relative;
+      padding-right:5px;
+      z-index: 10;
+      li {
+        display:flex;
+        margin-bottom:20px;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
+        color: #313439;
+        a {
+          display:inline-block;
+          width:45px;
+          height:45px;
+          margin-left:15px;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+          border-radius: 50px;
+        }
+        @each $obj in phone , ask ,apply {
+          &.#{$obj}{
+            a {
+              background:url(../assets/bg/bg_#{$obj}.svg) no-repeat center #E91E63;
+            }
+          }
+        }
+      }
+    }
+    .toggle-menu {
+      position: relative;
+      width:56px;
+      height:56px;
+      background: #E91E63;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 4px 5px rgba(0, 0, 0, 0.14);
+      border-radius: 50px;
+      z-index: 10;
+      span {
+        display:inline-block;
+        width:24px;
+        height:24px;
+        background:url(../assets/bg/bg_plus.svg) no-repeat center;
+        transition: all .5s;
+      }
+    }
+    &.active {
+      .list {
+        display:block;
+      }
+      .toggle-menu {
+        background-color:#313439;
+        span {
+          transform:rotate(-45deg);
+        }
+      }
+      &::after {
+        display:block;
+        position: fixed;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+        background: #FFFFFF;
+        opacity: 0.8;
+        content:"";
+      }
     }
   }
  </style>
