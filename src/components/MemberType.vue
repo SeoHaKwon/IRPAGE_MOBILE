@@ -47,6 +47,7 @@
   line-height: 26px;
   text-align: center;
   color: #ffffff;
+  z-index: 10;
   &.active {
     background-color: #d1d1d6;
   }
