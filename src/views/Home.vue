@@ -1,15 +1,15 @@
 <template>
-    <InputInformation/>
+    <Slider/>
 </template>
 
 <script>
 // @ is an alias to /src
-import InputInformation from '@/components/InputInformation.vue'
+import Slider from '@/components/Slider.vue'
 
 export default {
   name: 'home',
   components: {
-    InputInformation
+    Slider
   }
 }
 </script>

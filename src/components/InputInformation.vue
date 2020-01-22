@@ -11,7 +11,7 @@
         <ul class="input-list">
           <li class="">
             <p class="tit">회사명</p>
-            <div class="input-wrap">
+            <div class="input-wrap select-wrap">
               <input type="text" value="미래">
               <ul class="select-list">
                 <li>
@@ -200,7 +200,17 @@
         border-color:#EB5757;
       }
     }
+    .select-wrap {
+      input{
+        &:focus {
+          +.select-list {
+            display:block;
+          }
+        }
+      }
+    }
     .select-list {
+      display:none;
       position:absolute;
       left:0;
       top:45px;
