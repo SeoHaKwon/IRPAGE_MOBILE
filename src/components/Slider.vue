@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap">
+  <div class="wrap swiper-wrap ">
     <swiper :options="swiperOption">
       <swiper-slide>
         <strong class="tit">IR정보 받아보기</strong>
@@ -20,7 +20,7 @@
       <div class="swiper-pagination" slot="pagination">
       </div>
     </swiper>
-    <a href="#" class="btn-bottom active">
+    <a href="#" class="btn-bottom">
       시작하기
     </a>
 </div>
@@ -37,16 +37,57 @@ export default {
       swiperOption: {
         pagination: {
           el: '.swiper-pagination',
-          clickable: true,
-          renderBullet: function (index, className) {
-            return `<span class="dot swiper-pagination-bullet">${index}</span>`
-          }
+          clickable: true
         }
       }
     }
   }
 }
 </script>
+<style lang="scss">
+.swiper-wrap {
+  .swiper-container {
+    height:100%;
+    .swiper-pagination {
+      left:0;
+      top:0;
+      bottom:auto;
+      span {
+        background-color:#E5E5EA;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background-color:#E91E63;
+        }
+      }
+    }
+  }
+  .swiper-slide {
+    position:relative;
+    padding-top:20px;
+    text-align: center;
+    .slide-img {
+      padding-left:20px;
+    }
+    .tit {
+      display:inline-block;
+      margin-bottom:8px;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: #E91E63;
+    }
+    .sub {
+      margin-bottom:36px;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.5px;
+      color: #545454;
+    }
+  }
+}
+</style>
 <style lang="scss" scoped>
  .wrap {
    height:100%;
@@ -69,41 +110,6 @@ export default {
   z-index: 10;
   &.active {
     background-color:#D1D1D6;
-  }
-}
-.swiper-container {
-  padding-top:20px;
-  height:100%;
-}
-.wrap .swiper-pagination {
-  left:0;
-  top:0;
-  bottom:auto;
-  .swiper-pagination-bullet {
-    width:8px;
-    height:8px;
-  }
-}
-.swiper-slide {
-  text-align: center;
-  .slide-img {
-    padding-left:33px;
-  }
-  .tit {
-    display:inline-block;
-    margin-bottom:8px;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 34px;
-    text-align: center;
-    letter-spacing: -0.5px;
-    color: #E91E63;
-  }
-  .sub {
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: -0.5px;
-    color: #545454;
   }
 }
 
