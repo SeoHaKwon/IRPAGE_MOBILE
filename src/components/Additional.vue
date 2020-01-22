@@ -48,7 +48,7 @@
    .btn-link {
      display:inline-block;
      position:absolute;
-     left:34px;
+     left:24px;
      top:22px;
      width:10px;
      height:10px;

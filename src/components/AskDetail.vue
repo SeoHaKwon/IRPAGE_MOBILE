@@ -44,20 +44,21 @@ export default {
  .wrap {
    display:flex;
    flex-direction: column;
-   height:100%;
+  //  height:100%;
    .content {
-     padding:0 34px;
+     padding:0 22px;
+     overflow-x:hidden;
    }
  }
  .header {
-   position: relative;;
+   position: relative;
    padding-top:14px;
    margin-bottom:56px;
    text-align: center;
    .btn-link {
      display:inline-block;
      position:absolute;
-     left:34px;
+     left:24px;
      top:22px;
      width:10px;
      height:10px;
@@ -95,7 +96,6 @@ export default {
   }
   .list {
     li {
-      padding:0 18px;
       border-radius: 4px;
       .title {
         background:url(../assets/bg/bg_answer_q.png) no-repeat left top 4px;

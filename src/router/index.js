@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home'
-import FirstStep from '@/views/FirstStep'
-import AgreeStep from '@/views/AgreeStep'
-import Ask from '@/views/Ask2'
-import Ask2 from '@/views/Ask'
-import AdditionalInfor from '@/views/AdditionalInfor'
-
+import AlarmList from '@/components/AlarmList'
+import AskDetail from '@/components/AskDetail'
+import AskPageHistory from '@/components/AskPageHistory'
+import EmailEdit from '@/components/EmailEdit'
+import InputInformation from '@/components/InputInformation'
+import MainMenu from '@/components/MainMenu'
+import MeetingApply from '@/components/MeetingApply'
+import MeetingApplyStep2 from '@/components/MeetingApplyStep2'
+import MeetingApplyPop from '@/components/MeetingApplyPop'
+import MemberType from '@/components/MemberType'
+import Mypage from '@/components/Mypage'
+import Slider from '@/components/Slider'
 Vue.use(VueRouter)
 
 const routes = [
@@ -16,29 +22,64 @@ const routes = [
     component: Home
   },
   {
-    path: '/firstStep',
-    name: 'firstStep',
-    component: FirstStep
+    path: '/AlarmList',
+    name: 'AlarmList',
+    component: AlarmList
   },
   {
-    path: '/agreeStep',
-    name: 'agreeStep',
-    component: AgreeStep
+    path: '/AskDetail',
+    name: 'AskDetail',
+    component: AskDetail
   },
   {
-    path: '/ask',
-    name: 'ask',
-    component: Ask
+    path: '/AskPageHistory',
+    name: 'AskPageHistory',
+    component: AskPageHistory
   },
   {
-    path: '/ask2',
-    name: 'ask2',
-    component: Ask2
+    path: '/EmailEdit',
+    name: 'EmailEdit',
+    component: EmailEdit
   },
   {
-    path: '/additionalInfor',
-    name: 'additionalInfor',
-    component: AdditionalInfor
+    path: '/InputInformation',
+    name: 'InputInformation',
+    component: InputInformation
+  },
+  {
+    path: '/MainMenu',
+    name: 'MainMenu',
+    component: MainMenu
+  },
+  {
+    path: '/MeetingApply',
+    name: 'MeetingApply',
+    component: MeetingApply
+  },
+  {
+    path: '/MeetingApplyStep2',
+    name: 'MeetingApplyStep2',
+    component: MeetingApplyStep2
+  },
+  {
+    path: '/MeetingApplyPop',
+    name: 'MeetingApplyPop',
+    component: MeetingApplyPop
+  },
+  {
+    path: '/MemberType',
+    name: 'MemberType',
+    component: MemberType
+  },
+  {
+    path: '/Mypage',
+    name: 'Mypage',
+    component: Mypage
+  },
+  {
+    path: '/Slider',
+    name: 'Slider',
+    component: Slider
   }
 ]
 

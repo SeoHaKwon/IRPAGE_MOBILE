@@ -1,15 +1,43 @@
 <template>
-    <Slider/>
+    <div class="link-list">
+      <router-link to="/AlarmList">알림내역</router-link>
+      <router-link to="/AskDetail">문의내역 상세보기</router-link>
+      <router-link to="/AskPageHistory">문의내역</router-link>
+      <router-link to="/EmailEdit">이메일 변경</router-link>
+      <router-link to="/InputInformation">정보입력</router-link>
+      <router-link to="/MainMenu">메인메뉴버튼</router-link>
+      <router-link to="/MeetingApply">미팅신청</router-link>
+      <router-link to="/MeetingApplyStep2">미팅신청2</router-link>
+      <router-link to="/MeetingApplyPop">미팅완료팝업</router-link>
+      <router-link to="/MemberType">회원유형 선택</router-link>
+      <router-link to="/Mypage">마이페이지</router-link>
+      <router-link to="/Slider">슬라이드</router-link>
+    </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Slider from '@/components/Slider.vue'
 
 export default {
   name: 'home',
   components: {
-    Slider
   }
 }
 </script>
+<style lang="scss" scoped>
+  .link-list {
+    display:flex;
+    flex-direction: column;
+    height:100%;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    a {
+      font-size:20px;
+      line-height:22px;
+      & + a{
+        margin-top:20px;
+      }
+    }
+  }
+</style>

@@ -126,7 +126,7 @@
   }
 }
 .input-section {
-  padding:22px 27px 0 27px;
+  padding:22px 22px 0 22px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -247,6 +247,7 @@
         height:100%;
         border:none;
         padding:0 14px;
+        background-color:#fff;
         border: 1px solid #D1D1D6;
         border-radius: 4px;
         box-sizing: border-box;

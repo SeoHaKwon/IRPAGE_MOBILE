@@ -29,9 +29,10 @@ export default {
  .wrap {
    display:flex;
    flex-direction: column;
-   height:100%;
+  //  height:100%;
    .content {
      padding:0 22px;
+     overflow-x: hidden;
    }
  }
  .header {
@@ -42,7 +43,7 @@ export default {
    .btn-link {
      display:inline-block;
      position:absolute;
-     left:34px;
+     left:24px;
      top:22px;
      width:10px;
      height:10px;
