@@ -8,7 +8,9 @@ import EmailEdit from '@/components/EmailEdit'
 import InputInformation from '@/components/InputInformation'
 import MainMenu from '@/components/MainMenu'
 import MeetingApply from '@/components/MeetingApply'
+import MeetingAdit from '@/components/MeetingAdit'
 import MeetingList from '@/components/MeetingList'
+import MeetingWait from '@/components/MeetingWait'
 import MeetingCancel from '@/components/MeetingCancel'
 import MeetingCancel2 from '@/components/MeetingCancel2'
 import MeetingDetail from '@/components/MeetingDetail'
@@ -61,6 +63,11 @@ const routes = [
     component: MeetingApply
   },
   {
+    path: '/MeetingAdit',
+    name: 'MeetingAdit',
+    component: MeetingAdit
+  },
+  {
     path: '/MeetingApplyStep2',
     name: 'MeetingApplyStep2',
     component: MeetingApplyStep2
@@ -89,6 +96,11 @@ const routes = [
     path: '/MeetingDetail',
     name: 'MeetingDetail',
     component: MeetingDetail
+  },
+  {
+    path: '/MeetingWait',
+    name: 'MeetingWait',
+    component: MeetingWait
   },
   {
     path: '/MemberType',

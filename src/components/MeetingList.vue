@@ -284,8 +284,8 @@ export default {
       display:block;
       position: absolute;
       top:0;
-      left:-34px;
-      width:calc(100% + 68px);
+      left:-22px;
+      width:calc(100% + 44px);
       height:100%;
       background-color:#F2F2F2;
       content:"";
