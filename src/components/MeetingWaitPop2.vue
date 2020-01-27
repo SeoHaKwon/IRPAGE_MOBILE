@@ -424,7 +424,9 @@ export default {
       color: #313439;
     }
     .btn-wrap {
-      background-color:#E5E5EA;
+      margin-top:12px;
+      background-color:#F2F2F2;
+      border-top:1px solid #E5E5EA;
       button {
         width:50%;
         padding:12px 0;
@@ -434,6 +436,10 @@ export default {
         text-align: center;
         letter-spacing: -0.005em;
         color: #8E8E93;
+        & + button {
+          color:#E91E63;
+          border-left:1px solid #F2F2F2;
+        }
       }
     }
   }
