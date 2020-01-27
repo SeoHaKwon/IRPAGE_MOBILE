@@ -12,7 +12,7 @@ import MeetingAdit from '@/components/MeetingAdit'
 import MeetingList from '@/components/MeetingList'
 import MeetingError from '@/components/MeetingError'
 import MeetingWait from '@/components/MeetingWait'
-import MeetingWaitPop from '@/components/MeetingWaitPop'
+import MeetingWaitPop2 from '@/components/MeetingWaitPop2'
 import MeetingCancel from '@/components/MeetingCancel'
 import MeetingCancel2 from '@/components/MeetingCancel2'
 import MeetingDetail from '@/components/MeetingDetail'
@@ -105,9 +105,9 @@ const routes = [
     component: MeetingDetail
   },
   {
-    path: '/MeetingWaitpop',
-    name: 'MeetingWaitpop',
-    component: MeetingWaitPop
+    path: '/MeetingWaitpop2',
+    name: 'MeetingWaitpop2',
+    component: MeetingWaitPop2
   },
   {
     path: '/MeetingWait',
