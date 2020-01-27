@@ -10,6 +10,7 @@ import MainMenu from '@/components/MainMenu'
 import MeetingApply from '@/components/MeetingApply'
 import MeetingList from '@/components/MeetingList'
 import MeetingCancel from '@/components/MeetingCancel'
+import MeetingCancel2 from '@/components/MeetingCancel2'
 import MeetingDetail from '@/components/MeetingDetail'
 import MeetingApplyStep2 from '@/components/MeetingApplyStep2'
 import MeetingApplyPop from '@/components/MeetingApplyPop'
@@ -78,6 +79,11 @@ const routes = [
     path: '/MeetingCancel',
     name: 'MeetingCancel',
     component: MeetingCancel
+  },
+  {
+    path: '/MeetingCancel2',
+    name: 'MeetingCancel2',
+    component: MeetingCancel2
   },
   {
     path: '/MeetingDetail',

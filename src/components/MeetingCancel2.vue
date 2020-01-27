@@ -7,7 +7,7 @@
     <div class="content">
       <div class="meeting-result">
         <p class="tit close">
-          <strong>승인 거절된 일정</strong>
+          <strong>취소한 일정</strong>
         </p>
         <div class="inner">
           <div class="date-box">
@@ -40,21 +40,15 @@
             <dd>LCD 시장 철수로 인한 해외 시장에서의 점유율의 영향과 향후 계획에 대해 궁금하며 사전에 전달 가능한 자료가 있으면 먼저 요청드립니다.</dd>
           </dl>
         </div>
-      </div>
-      <dl class="cancel-section">
+              <dl class="cancel-section">
         <dt class="tit">
-          거절사유
+          취소사유
         </dt>
         <dd class="cont">
-          급작스러운 회사 전체 일정으로 해당 시간대 미팅이 불가하여 승인 거절합니다.
-          <div class="manager-info">
-            <strong class="name">유연석 차장</strong>
-            <span class="pic">
-              <img src="../assets/img/img_name01.svg" alt="">
-            </span>
-          </div>
+          급작스러운 개인 일정으로 취소합니다. 추후 다시 요청 드리겠습니다.
         </dd>
       </dl>
+      </div>
     </div>
   </div>
 </template>
@@ -227,6 +221,40 @@ export default {
        + .base {
          margin-top:32px;
        }
+    }
+    .manager-info {
+      position:relative;
+      padding-left:35px;
+      .pic {
+        position:absolute;
+        left:0;
+        top:4px;
+      }
+      .info {
+        margin-top:13px;
+        span {
+          display:inline-block;
+          width:100%;
+          font-size: 16px;
+          line-height: 19px;
+          color: #8E8E93;
+          +span {
+            margin-top:4px;
+          }
+        }
+      }
+      .name {
+        font-size: 20px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.005em;
+        text-transform: capitalize;
+        color: #545454;
+      }
+      + .manager-info {
+        margin-top:38px;
+      }
     }
     .name-box {
       display:flex;

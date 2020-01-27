@@ -8,7 +8,8 @@
       <router-link to="/MainMenu">메인메뉴버튼</router-link>
       <router-link to="/MeetingApply">미팅신청</router-link>
       <router-link to="/MeetingList">미팅리스트</router-link>
-      <router-link to="/MeetingCancel">미팅 취소</router-link>
+      <router-link to="/MeetingCancel">미팅 거절</router-link>
+      <router-link to="/MeetingCancel2">미팅 취소</router-link>
       <router-link to="/MeetingDetail">미팅 상세</router-link>
       <router-link to="/MeetingApplyStep2">미팅신청2</router-link>
       <router-link to="/MeetingApplyPop">미팅완료팝업</router-link>
