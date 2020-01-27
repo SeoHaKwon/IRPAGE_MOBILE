@@ -13,6 +13,7 @@
       <router-link to="/MeetingDetail">미팅 상세</router-link>
       <router-link to="/MeetingWait">미팅 대기중</router-link>
       <router-link to="/MeetingAdit">미팅 일정변경</router-link>
+      <router-link to="/MeetingError">미팅 신청에러</router-link>
       <router-link to="/MeetingApplyStep2">미팅신청2</router-link>
       <router-link to="/MeetingApplyPop">미팅완료팝업</router-link>
       <router-link to="/MemberType">회원유형 선택</router-link>
