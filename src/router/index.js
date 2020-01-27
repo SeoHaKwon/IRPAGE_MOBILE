@@ -8,6 +8,9 @@ import EmailEdit from '@/components/EmailEdit'
 import InputInformation from '@/components/InputInformation'
 import MainMenu from '@/components/MainMenu'
 import MeetingApply from '@/components/MeetingApply'
+import MeetingList from '@/components/MeetingList'
+import MeetingCancel from '@/components/MeetingCancel'
+import MeetingDetail from '@/components/MeetingDetail'
 import MeetingApplyStep2 from '@/components/MeetingApplyStep2'
 import MeetingApplyPop from '@/components/MeetingApplyPop'
 import MemberType from '@/components/MemberType'
@@ -62,9 +65,24 @@ const routes = [
     component: MeetingApplyStep2
   },
   {
+    path: '/MeetingList',
+    name: 'MeetingList',
+    component: MeetingList
+  },
+  {
     path: '/MeetingApplyPop',
     name: 'MeetingApplyPop',
     component: MeetingApplyPop
+  },
+  {
+    path: '/MeetingCancel',
+    name: 'MeetingCancel',
+    component: MeetingCancel
+  },
+  {
+    path: '/MeetingDetail',
+    name: 'MeetingDetail',
+    component: MeetingDetail
   },
   {
     path: '/MemberType',
