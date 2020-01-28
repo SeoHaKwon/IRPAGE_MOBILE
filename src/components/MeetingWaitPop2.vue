@@ -54,7 +54,9 @@
           2019년 12월 2일 월요일<br>
           10:00 ~ 11:00
         </strong>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="textarea">
+          <textarea name="" id="" cols="30" rows="10" placeholder="취소하시려는 사유를 입력해주세요"></textarea>
+        </div>
         <p class="sub">취소하시겠습니까?</p>
         <div class="btn-wrap">
           <button type="button">취소</button>
@@ -391,6 +393,7 @@ export default {
   background-color:rgba($color: #000000, $alpha: .6);
   .pop-cont {
     width:100%;
+    padding-top:29px;
     background: #FFFFFF;
     border-radius: 10px;
     overflow: hidden;
@@ -405,14 +408,27 @@ export default {
       text-transform: capitalize;
       color: #313439;
     }
+    .textarea {
+      padding:0 15px;
+    }
     textarea {
       width:100%;
       height:86px;
-      margin:22px 0;
+      padding:8px 12px;
+      margin:22px auto;
       resize: none;
       background: #F2F2F2;
       border: 1px solid #E5E5EA;
       border-radius: 2px;
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      text-transform: capitalize;
+      color: #545454;
+      &::placeholder{
+        color: #C7C7CC;
+      }
     }
     .sub {
       font-weight: 500;
