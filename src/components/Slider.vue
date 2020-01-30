@@ -65,9 +65,6 @@ export default {
     position:relative;
     padding-top:20px;
     text-align: center;
-    .slide-img {
-      padding-left:20px;
-    }
     .tit {
       display:inline-block;
       margin-bottom:8px;

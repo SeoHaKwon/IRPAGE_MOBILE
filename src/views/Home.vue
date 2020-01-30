@@ -14,7 +14,7 @@
       <router-link to="/MeetingWait">미팅 대기중</router-link>
       <router-link to="/MeetingWaitPop2">미팅 대기중 팝업</router-link>
       <router-link to="/MeetingWaitPop">미팅 대기중 컨펌팝업</router-link>
-      <router-link to="/MeetingAdit">미팅 일정변경</router-link>
+      <router-link to="/MeetingEdit">미팅 일정변경</router-link>
       <router-link to="/MeetingError">미팅 신청에러</router-link>
       <router-link to="/MeetingApplyStep2">미팅신청2</router-link>
       <router-link to="/MeetingApplyPop">미팅완료팝업</router-link>

@@ -8,7 +8,7 @@ import EmailEdit from '@/components/EmailEdit'
 import InputInformation from '@/components/InputInformation'
 import MainMenu from '@/components/MainMenu'
 import MeetingApply from '@/components/MeetingApply'
-import MeetingAdit from '@/components/MeetingAdit'
+import MeetingEdit from '@/components/MeetingEdit'
 import MeetingList from '@/components/MeetingList'
 import MeetingError from '@/components/MeetingError'
 import MeetingWait from '@/components/MeetingWait'
@@ -66,9 +66,9 @@ const routes = [
     component: MeetingApply
   },
   {
-    path: '/MeetingAdit',
-    name: 'MeetingAdit',
-    component: MeetingAdit
+    path: '/MeetingEdit',
+    name: 'MeetingEdit',
+    component: MeetingEdit
   },
   {
     path: '/MeetingApplyStep2',

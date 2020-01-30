@@ -1,9 +1,5 @@
 <template>
   <div class="wrap">
-    <div class="header">
-      <a href="#" class="btn-link"></a>
-      <strong>IR 미팅 신청하기</strong>
-    </div>
     <div class="top-spot">
       <i>
         <img src="../assets/bg/bg_topInfo.svg" alt="">
@@ -127,30 +123,6 @@ export default {
      padding:0 22px;
    }
  }
- .header {
-   position: relative;
-   padding-top:14px;
-   margin-bottom:56px;
-   text-align: center;
-   .btn-link {
-     display:inline-block;
-     position:absolute;
-     left:24px;
-     top:22px;
-     width:10px;
-     height:10px;
-     transform: rotate(45deg);
-     border:2px solid #000;
-     border-top:none;
-     border-right:none;
-     -webkit-tap-highlight-color:transparent;
-   }
-   strong {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 26px;
-     }
-}
 .btn-bottom {
   display:block;
   position:absolute;

@@ -426,6 +426,8 @@ export default {
       letter-spacing: -0.01em;
       text-transform: capitalize;
       color: #545454;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0;
       &::placeholder{
         color: #C7C7CC;
       }
@@ -452,9 +454,21 @@ export default {
         text-align: center;
         letter-spacing: -0.005em;
         color: #8E8E93;
+        background-color:transparent;
         & + button {
+          position:relative;
           color:#E91E63;
-          border-left:1px solid #F2F2F2;
+          &::after {
+            display:block;
+            position:absolute;
+            left:0;
+            top:0;
+            width:1px;
+            height:100%;
+            background-color:#E5E5EA;
+            content:"";
+            z-index: 100;
+          }
         }
       }
     }

@@ -201,6 +201,8 @@ export default {
     line-height: 16px;
     letter-spacing: -0.005em;
     color: #545454;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
     &::placeholder{
       font-size: 14px;
       line-height: 20px;

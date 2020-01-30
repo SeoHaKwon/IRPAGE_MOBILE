@@ -68,6 +68,7 @@
   letter-spacing: -0.5px;
   color: #545454;
   .check-type {
+    max-width:144px;
     @each $obj in single , agency{
       &.#{$obj}{
         span {
@@ -93,6 +94,7 @@
       width:100%;
       height:100%;
       opacity: 0;
+      -webkit-tap-highlight-color: transparent;
     }
     span {
       display:inline-block;
