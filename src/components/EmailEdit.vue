@@ -1,7 +1,7 @@
 <template>
   <div class="wrap">
     <div class="header">
-      <a href="#" class="btn-link"></a>
+      <a href="#" class="btn-link" v-on:click="$router.push('/')"></a>
       <strong>이메일 변경</strong>
     </div>
     <div class="content">

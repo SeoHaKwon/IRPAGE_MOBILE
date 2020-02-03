@@ -2,7 +2,7 @@
   <div class="wrap">
     <div style="flex: 1;">
     <div class="header">
-      <a href="#" class="btn-link"></a>
+      <a href="#" class="btn-link" v-on:click="$router.push('/')"></a>
       <strong>문의하기</strong>
     </div>
     <div class="content">
