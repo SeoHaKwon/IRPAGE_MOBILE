@@ -71,7 +71,7 @@
     display:flex;
     height:144px;
     max-width:144px;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     @each $obj in single , agency{
       &.#{$obj}{
