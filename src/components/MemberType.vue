@@ -68,7 +68,11 @@
   letter-spacing: -0.5px;
   color: #545454;
   .check-type {
+    display:flex;
+    height:144px;
     max-width:144px;
+    align-items: flex-end;
+    justify-content: center;
     @each $obj in single , agency{
       &.#{$obj}{
         span {
