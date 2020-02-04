@@ -12,7 +12,7 @@
         <div class="inner">
           <div class="date-box">
             <p class="day en">2</p>
-            <span class="month">DEC</span>
+            <span class="month en">DEC</span>
           </div>
           <div class="data-info">
             <p>2019년 12월 2일 월요일</p>
