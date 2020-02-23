@@ -22,6 +22,8 @@ import MeetingApplyPop from '@/components/MeetingApplyPop'
 import MemberType from '@/components/MemberType'
 import Mypage from '@/components/Mypage'
 import Slider from '@/components/Slider'
+import LoginType from '@/components/LoginType'
+import Login from '@/components/Login'
 Vue.use(VueRouter)
 
 const routes = [
@@ -134,6 +136,16 @@ const routes = [
     path: '/Slider',
     name: 'Slider',
     component: Slider
+  },
+  {
+    path: '/LoginType',
+    name: 'LoginType',
+    component: LoginType
+  },
+  {
+    path: '/Login',
+    name: 'Login',
+    component: Login
   }
 ]
 

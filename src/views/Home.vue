@@ -21,6 +21,8 @@
       <router-link to="/MemberType">회원유형 선택</router-link>
       <router-link to="/Mypage">마이페이지</router-link>
       <router-link to="/Slider">슬라이드</router-link>
+      <router-link to="/LoginType">기존 회원</router-link>
+      <router-link to="/Login">로그인</router-link>
     </div>
 </template>
 
