@@ -24,6 +24,7 @@ import Mypage from '@/components/Mypage'
 import Slider from '@/components/Slider'
 import LoginType from '@/components/LoginType'
 import Login from '@/components/Login'
+import ServiceCenter from '@/components/ServiceCenter'
 Vue.use(VueRouter)
 
 const routes = [
@@ -146,6 +147,11 @@ const routes = [
     path: '/Login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/ServiceCenter',
+    name: 'ServiceCenter',
+    component: ServiceCenter
   }
 ]
 

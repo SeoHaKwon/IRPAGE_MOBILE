@@ -23,6 +23,7 @@
       <router-link to="/Slider">슬라이드</router-link>
       <router-link to="/LoginType">기존 회원</router-link>
       <router-link to="/Login">로그인</router-link>
+      <router-link to="/ServiceCenter">고객센터</router-link>
     </div>
 </template>
 
