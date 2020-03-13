@@ -119,14 +119,21 @@ export default {
    display:flex;
    flex-direction: column;
    height:100%;
+   padding-top:70px;
    .content {
      padding:0 22px;
    }
  }
  .header {
-   position: relative;;
+   position: fixed;
+   left:0;
+   top:0;
+   z-index: 50;
+   background-color:#fff;
+   border-bottom: 1px solid #E5E5EA;
+   width:100%;
    padding-top:14px;
-   margin-bottom:56px;
+   padding-bottom:14px;
    text-align: center;
    .btn-link {
      display:inline-block;
