@@ -115,6 +115,7 @@ export default {
    display:flex;
    flex-direction: column;
    height:100%;
+   overflow: auto;
    padding-top:70px;
    .content {
      padding:0 22px;
