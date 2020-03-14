@@ -60,6 +60,7 @@ export default {
    flex-direction: column;
    height:100%;
    padding-bottom:100px;
+   padding-top:55px;
    overflow: auto;
    .content {
      position: relative;
@@ -67,10 +68,15 @@ export default {
    }
  }
  .header {
-   position: relative;
-   padding-top:14px;
-   margin-bottom:12px;
+   position: fixed;
+   left:0;
+   top:0;
+   width:100%;
+   padding:14px 0;
    text-align: center;
+   background-color: #fff;
+   z-index: 50;
+   border-bottom: 1px solid #E5E5EA;
    .btn-link {
      display:inline-block;
      position:absolute;
