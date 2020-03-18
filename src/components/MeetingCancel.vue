@@ -32,6 +32,22 @@
                 <span>박무열</span>
                 <span>구자웅</span>
                 <span>백경진</span>
+                <span>백경진</span>
+                <span>백경진</span>
+                <span>백경진</span>
+              </div>
+            </dd>
+          </dl>
+                    <dl class="base">
+            <dt class="tit">신청인</dt>
+            <dd>
+              <div class="name-box">
+                <span>박무열</span>
+                <span>구자웅</span>
+                <span>백경진</span>
+                <span>백경진</span>
+                <span>백경진</span>
+                <span>백경진</span>
               </div>
             </dd>
           </dl>
@@ -230,8 +246,13 @@ export default {
     }
     .name-box {
       display:flex;
+      flex-wrap:wrap;
+      margin-left:-8px;
+      margin-top:-4px;
       span {
         display:inline-block;
+        margin-left:8px;
+        margin-top:4px;
         padding:5px 10px;
         font-weight: 500;
         font-size: 14px;
@@ -240,9 +261,6 @@ export default {
         background: #FFFFFF;
         border: 1px solid #E5E5EA;
         border-radius: 4px;
-        & + span {
-          margin-left:8px;
-        }
       }
     }
     .direct {

@@ -169,7 +169,7 @@ export default {
     letter-spacing: -0.5px;
     color: #545454;
     opacity: 0.87;
-    background:url(../assets/bg/bg_answer_a.png) no-repeat left top 4px;
+    background:url(../assets/bg/bg_answer_a.png) no-repeat left top 9px;
   }
 }
  </style>
