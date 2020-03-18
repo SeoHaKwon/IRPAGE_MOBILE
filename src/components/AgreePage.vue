@@ -534,7 +534,7 @@ export default {
     }
     span {
       padding-left:24px;
-      background:url(../assets/btn/btn_check.png) no-repeat left center;
+      background:url(../assets/btn/btn_check.png) no-repeat left top 6px;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.01em;
