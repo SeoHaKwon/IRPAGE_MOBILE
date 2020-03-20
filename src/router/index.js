@@ -25,6 +25,7 @@ import Slider from '@/components/Slider'
 import LoginType from '@/components/LoginType'
 import Login from '@/components/Login'
 import ServiceCenter from '@/components/ServiceCenter'
+import BusinessCard from '@/components/BusinessCard'
 Vue.use(VueRouter)
 
 const routes = [
@@ -152,6 +153,11 @@ const routes = [
     path: '/ServiceCenter',
     name: 'ServiceCenter',
     component: ServiceCenter
+  },
+  {
+    path: '/BusinessCard',
+    name: 'BusinessCard',
+    component: BusinessCard
   }
 ]
 

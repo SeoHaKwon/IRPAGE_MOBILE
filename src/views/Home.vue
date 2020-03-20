@@ -24,6 +24,7 @@
       <router-link to="/LoginType">기존 회원</router-link>
       <router-link to="/Login">로그인</router-link>
       <router-link to="/ServiceCenter">고객센터</router-link>
+      <router-link to="/BusinessCard">명함촬영</router-link>
     </div>
 </template>
 
