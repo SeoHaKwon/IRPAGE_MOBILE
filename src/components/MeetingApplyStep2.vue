@@ -23,13 +23,13 @@
         </div>
       </div>
       <div class="user-info">
-        <strong class="tit">동행인 1 정보</strong>
+        <strong class="tit">동행인 1 정보 <button type="button"></button></strong>
         <input type="text" placeholder="이름">
         <input type="text" placeholder="회사명">
         <input type="text" placeholder="핸드폰 번호">
       </div>
       <div class="user-info">
-        <strong class="tit">동행인 2 정보</strong>
+        <strong class="tit">동행인 2 정보<button type="button"></button></strong>
         <input type="text" placeholder="이름">
         <input type="text" placeholder="회사명">
         <input type="text" placeholder="핸드폰 번호">
@@ -192,11 +192,19 @@ export default {
   flex-direction: column;
   margin-top:26px;
   .tit {
+    display:flex;
+    align-items: center;
     margin-bottom:10px;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: -0.005em;
     color: #545454;
+     button {
+        width: 14px;
+        height:14px;
+        margin-left:6px;
+        background:url(../assets/btn/btn_delete.png) no-repeat center;
+      }
   }
   input {
     height:40px;
